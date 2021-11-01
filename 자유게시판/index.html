@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>자유게시판 목록</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel='stylesheet'  href='style.css'/>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">DO IT!! STUDY</a>
+
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">플래너스캐너</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">꿀팁게시판</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">자유게시판</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">자유게시판</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">랭킹</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        <h1>DO IT!!</h1>
+        <h2>STUDY!!</h2>
+
+      </div>
+
+    <div class="board_list_wrap">
+        <div class = "category">
+            <button type="button" class="btn float-right btn-primary dropdown-toggle" data-toggle="dropdown">
+                카테고리
+              </button>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+        </div>
+
+        <table class="board_list">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>작성일</th>
+                    <th>조회</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                     <td>2</td>
+                     <td class="tit">
+                         <a href="#">공지사항</a>
+                     </td>
+                     <td>관리자</td>
+                     <td>2020-11-02</td>
+                     <td>4</td>
+                </tr>
+                <tr>
+                     <td>1</td>
+                     <td class="tit">
+                          <a href="#">크크루크크ssssssssssssssss</a>
+                        </td>
+                     <td>글쓴이</td>
+                     <td>2020-11-01</td>
+                     <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+    <div class="paging">
+        <a href="#" class="first">처음페이지</a>
+        <a href="#" class="prev">이전 페이지</a>
+        <a href="#" class="num">1</a>
+        <a href="#" class="num">2</a>
+        <a href="#" class="num">3</a>
+        <a href="#" class="next">다음 페이지</a>
+        <a href="#" class="last">마지막 페이지</a>
+        <button class="btn btn-success float-right" type="submit">검색</button>
+       <input class="form-control float-right" type="text" placeholder="Search">
+    </div>
+
+    </div>
+    
+</body>
+</html>
